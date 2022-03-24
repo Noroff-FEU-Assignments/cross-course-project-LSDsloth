@@ -27,6 +27,7 @@
   --main_color: #16161d;
   --secondary_color: #1d1d26;
   --dark_blue: #1b203d;
+  --dark_blue_hover: #22284d;
   --first_gradient: #00aebe;
   --second_gradient: #0e43bf;
 }
@@ -183,12 +184,44 @@ main {
 
 /*ALL GAMES*/
 
-.all_games_section h1 {
-  float: left;
-  color: #fff;
-  font-family: roboto_slab_semibold;
+.all_games_section {
+  margin-top: 50px;
 }
 
-.all_games_section .show_all {
-  float: right;
+.all_games_section .infoshit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all_games_section a {
+  text-decoration: none;
+}
+
+.all_games_section h1 {
+  color: #fff;
+  font-family: roboto_slab_semibold;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.all_games_section h1:hover {
+  color: var(--first_gradient);
+}
+
+.all_games_section .show_all_btn {
+  font-family: open_sans_medium;
+  font-size: 1rem;
+  width: 150px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--dark_blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.all_games_section .show_all_btn:hover {
+  background-color: var(--dark_blue_hover);
 }
