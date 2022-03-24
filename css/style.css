@@ -1,26 +1,26 @@
 @font-face {
   font-family: open_sans_regular;
-  src: url(fonts/OpenSans-Regular.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
   font-family: open_sans_medium;
-  src: url(fonts/OpenSans-Medium.ttf);
+  src: url(../fonts/OpenSans-Medium.ttf);
 }
 
 @font-face {
   font-family: open_sans_bold;
-  src: url(fonts/OpenSans-bold.ttf);
+  src: url(../fonts/OpenSans-bold.ttf);
 }
 
 @font-face {
   font-family: roboto_slab_bold;
-  src: url(fonts/RobotoSlab-Bold.ttf);
+  src: url(../fonts/RobotoSlab-Bold.ttf);
 }
 
 @font-face {
   font-family: roboto_slab_semibold;
-  src: url(fonts/RobotoSlab-SemiBold.ttf);
+  src: url(../fonts/RobotoSlab-SemiBold.ttf);
 }
 
 :root {
@@ -107,9 +107,8 @@ main {
 .bannercontainer {
   content: "";
   width: 100%;
-
   aspect-ratio: 70 / 10;
-  background-image: url(images/Banner_image.jpg);
+  background-image: url(../images/Banner_image.jpg);
   background-position: center;
   background-size: 100%;
   display: flex;
