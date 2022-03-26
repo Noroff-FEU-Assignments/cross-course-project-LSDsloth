@@ -9,9 +9,12 @@
     <title>Gamehub|Home</title>
 </head>
 <body>
+    <!--HEADER STARTS-->
     <header>
         <nav>
             <a href="index.html"><img class="logo" src="images/GameHub_Logo.png" alt=""></a>
+            <input type="checkbox" id="toggle">
+            <label class="hamburger_menu" for="toggle"> <i class="fa-solid fa-bars"></i> </label>
             <ul>
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="games"><a href="#">Games</a></li>
@@ -23,49 +26,489 @@
             </div>
         </nav>
     </header>
+    <!--HEADER ENDS-->
 
+    <!-- MAIN STARTS-->
     <main>
+        <!--BANNER STARTS-->
         <div class="bannercontainer">
             <div class="textbox">
                 <h1>THE UNIVERSE OF GAMES</h1>
                 <P>BUY - PLAY - SELL</P>
             </div>
         </div>
+        <!--BANNER ENDS-->
 
+        <section class="background">
+        <!--SEARCHBAR STARTS-->
         <div class="searchbar_container">
             <input class="searchbar" type="search" placeholder="Search for game, developer or genre...">
             <a class="search_btn" href="#">
                 <i class="fa-solid fa-magnifying-glass search_icon"></i>
             </a>
         </div>
+        <!--SEARCHBAR ENDS-->
 
-        <section class="all_games_section">
-            <div class="infoshit">
-                <a href="#">
-                    <h1>All games</h1>
-                </a>
-                <a href="#">
-                    <button class="show_all_btn">Show all</button>
-                </a>
-            </div>
-
-            <div class="games_container">
-                <div class="gamecard">
-                    <div class="thumbnail_container">
-                        <a href="#">
-                            <img src="images/Assassin.jpg" alt="assassin game">
-                        </a>
-                        <div class="gameinfo">
-                            <p class="title">Assassin</p>
-                            <div class="price">
-                                <p>$10.00</p>
-                            </div>
-                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus"></i></button>
+        <!--ALL GAMES SECTION STARTS-->
+            <div class="all_games_section">
+                <div class="infoshit">
+                    <a href="#">
+                        <h1>All games</h1>
+                    </a>
+                    <a href="#">
+                        <button class="show_all_btn">Show all</button>
+                    </a>
+                </div>
+                
+                <div class="games_container">
+                    
+                    <div class="gamecard">
+                        <div class="thumbnail_container">
+                            <a href="#"> <img class="assassin_thumbnail" src="images/Assassin.jpg" alt="assassin game"> </a>
                         </div>
+                        <div class="gameinfo">
+                            <a href="#"><p class="title">Assassin</p></a>
+                            <div class="subinfo">
+                                <div class="price">
+                                    <p class="earlier_price"></p>
+                                    <p class="current_price">$10.00</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
                     </div>
+                    
+                    <div class="gamecard">
+                        <div class="thumbnail_container">
+                            <a href="#"> <img class="assassin_thumbnail" src="images/black.jpg" alt="assassin game"> </a>
+                        </div>
+                        <div class="gameinfo">
+                            <a href="#"><p class="title">Black</p></a>
+                            <div class="subinfo">
+                                <div class="price">
+                                    <p class="earlier_price"></p>
+                                    <p class="current_price">$10.00</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                    </div>
+                    
+                    <div class="gamecard">
+                        <div class="thumbnail_container">
+                            <a href="#"> <img class="assassin_thumbnail" src="images/boxer.jpg" alt="assassin game"> </a>
+                        </div>
+                        <div class="gameinfo">
+                            <a href="#"><p class="title">Boxer</p></a>
+                            <div class="subinfo">
+                                <div class="price">
+                                    <p class="earlier_price"></p>
+                                    <p class="current_price">$10.00</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                    </div>
+                    
+                    <div class="gamecard">
+                        <div class="thumbnail_container">
+                            <a href="#"> <img class="assassin_thumbnail" src="images/Cyperpunk.jpg" alt="assassin game"> </a>
+                        </div>
+                        <div class="gameinfo">
+                            <a href="#"><p class="title">Cyberpunk</p></a>
+                            <div class="subinfo">
+                                <div class="price">
+                                    <p class="earlier_price"></p>
+                                    <p class="current_price">$10.00</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                    </div>
+                    
+                    <div class="gamecard">
+                        <div class="thumbnail_container">
+                            <a href="#"> <img class="assassin_thumbnail" src="images/Super_Duper.jpg" alt="assassin game"> </a>
+                        </div>
+                        <div class="gameinfo">
+                            <a href="#"><p class="title">Super Duper</p></a>
+                            <div class="subinfo">
+                                <div class="price">
+                                    <p class="earlier_price"></p>
+                                    <p class="current_price">$10.00</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            </section>
+            <!--ALL GAEMS SECTION ENDS-->
+
+            <!--UPCOMING GAMES SECTION STARTS-->
+            <section class="background">
+
+                <div class="all_games_section">
+                    <div class="infoshit">
+                        <a href="#">
+                            <h1>Upcoming games</h1>
+                        </a>
+                        <a href="#">
+                            <button class="show_all_btn">Show all</button>
+                        </a>
+                    </div>
+                    
+                    <div class="games_container">
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Furious.jpg" alt="assassin game"> </a>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Furious</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price"></p>
+                                        <p class="current_price">$10.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Ping_pong.jpg" alt="assassin game"> </a>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Ping Pong</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price"></p>
+                                        <p class="current_price">$10.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Racing.jpg" alt="assassin game"> </a>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Racing</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price"></p>
+                                        <p class="current_price">$10.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Space_War.jpg" alt="assassin game"> </a>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Space War</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price"></p>
+                                        <p class="current_price">$10.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Forge_Legend.jpg" alt="assassin game"> </a>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Forge Legends</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price"></p>
+                                        <p class="current_price">$10.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+
+            </section>
+            <!--UPCOMING GAMES SECTION ENDS-->
+
+            <!--USED GAMES SECTION STARTS-->
+            <section class="background">
+
+                <div class="all_games_section">
+                    <div class="infoshit">
+                        <a href="#">
+                            <h1>Used games</h1>
+                        </a>
+                        <a href="#">
+                            <button class="show_all_btn">Show all</button>
+                        </a>
+                    </div>
+                    
+                    <div class="games_container">
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Furious.jpg" alt="assassin game"> </a>
+                                <div class="outlet_container">
+                                    <p class="outlet_txt">OUTLET</p>
+                                    <P class="discount_percent">50%</P>
+                                </div>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Furious</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price">$10.00</p>
+                                        <p class="current_price">$5.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Ping_pong.jpg" alt="assassin game"> </a>
+                                <div class="outlet_container">
+                                    <p class="outlet_txt">OUTLET</p>
+                                    <P class="discount_percent">50%</P>
+                                </div>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Ping Pong</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price">$10.00</p>
+                                        <p class="current_price">$5.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Racing.jpg" alt="assassin game"> </a>
+                                <div class="outlet_container">
+                                    <p class="outlet_txt">OUTLET</p>
+                                    <P class="discount_percent">50%</P>
+                                </div>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Racing</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price">$10.00</p>
+                                        <p class="current_price">$5.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Space_War.jpg" alt="assassin game"> </a>
+                                <div class="outlet_container">
+                                    <p class="outlet_txt">OUTLET</p>
+                                    <P class="discount_percent">50%</P>
+                                </div>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Space War</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price">$10.00</p>
+                                        <p class="current_price">$5.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                        <div class="gamecard">
+                            <div class="thumbnail_container">
+                                <a href="#"> <img class="assassin_thumbnail" src="images/Forge_Legend.jpg" alt="assassin game"> </a>
+                                <div class="outlet_container">
+                                    <p class="outlet_txt">OUTLET</p>
+                                    <P class="discount_percent">50%</P>
+                                </div>
+                            </div>
+                            <div class="gameinfo">
+                                <a href="#"><p class="title">Forge Legends</p></a>
+                                <div class="subinfo">
+                                    <div class="price">
+                                        <p class="earlier_price">$10.00</p>
+                                        <p class="current_price">$5.00</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" ></i></button>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+
+            </section>
+            <!--USED GAMES SECTION ENDS-->
+
+        </main>
+        <!--MAIN ENDS-->
+
+        <!--FOOTER STARTS-->
+        <footer>
+            <div class="center">
+                <div class="content">
+                    
+                    <section class="information">
+                        <h3>Information</h3>
+                        <a href="#">About us</a>
+                        <a href="#">Terms & conditions</a>
+                        <a href="#">Privacy poicy</a>
+                        <a href="#">FAQ</a>
+                    </section>
+                    
+                    <section class="customer_service">
+                        <h3>Customer support</h3>
+                        <a href="#">Support</a>
+                        <a href="#">Contact us</a>
+                    </section>
+                    
+                    <section class="my_accounnt">
+                        <h3>My account</h3>
+                        <a href="#">Account</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Order history</a>
+                        <a href="#">Sell a game</a>
+                    </section>
+                    
                 </div>
             </div>
-        </section>
-    </main>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
