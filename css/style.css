@@ -387,6 +387,7 @@ footer .center {
 footer .content {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -482,8 +483,15 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+  nav {
+    height: 50px;
+  }
   .games_container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    height: 40px;
   }
 
   footer .content {
