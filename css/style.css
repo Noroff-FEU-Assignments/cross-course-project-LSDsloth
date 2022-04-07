@@ -42,6 +42,13 @@ html {
   background-color: #16161d;
   font-family: open_sans_regular;
   box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*NAVIGATION BAR*/
@@ -172,10 +179,12 @@ main {
   font-size: 1rem;
   color: #fff;
   padding: 0 3%;
+  font-family: open_sans_regular;
 }
 
 .searchbar_container .searchbar::placeholder {
-  color: #fff;
+  color: #bbb;
+  font-family: open_sans_regular;
 }
 
 .searchbar_container .search_btn {
@@ -229,7 +238,7 @@ main {
 
 .all_games_section h1 {
   color: #fff;
-  font-family: roboto_slab_semibold;
+  font-family: open_sans_bold;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -376,6 +385,7 @@ main {
 /*FOOTER*/
 footer {
   background-color: var(--dark_blue);
+  margin-top: auto;
 }
 
 footer .center {
@@ -417,6 +427,10 @@ footer a:hover {
   .games_container {
     grid-template-columns: repeat(4, 1fr);
     overflow: scroll;
+  }
+
+  .login_aside {
+    display: none;
   }
 }
 
@@ -513,4 +527,250 @@ footer a:hover {
     max-width: 300px;
     margin: 0 auto;
   }
+}
+
+/*LOGIN*/
+.login_aside {
+  height: 100vh;
+  width: 30vw;
+  background-image: linear-gradient(
+    to bottom,
+    var(--first_gradient),
+    var(--second_gradient)
+  );
+  position: relative;
+}
+
+.login_aside h3 {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 3.5vw;
+  color: #fff;
+  font-family: roboto_slab_bold;
+  text-align: center;
+}
+
+.login_form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_form h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: open_sans_medium;
+  margin: 0 0 30px 50px;
+}
+
+.login_form .email {
+  margin-bottom: 20px;
+}
+
+.login_form label {
+  font-family: open_sans_bold;
+  display: block;
+  color: #fff;
+  margin: 0 0 10px 52px;
+}
+
+.login_form label::after {
+  content: " *";
+  color: var(--first_gradient);
+}
+
+.login_form i {
+  color: var(--first_gradient);
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.login_form input {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--secondary_color);
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 1.125rem;
+  font-family: open_sans_regular;
+}
+
+.login_form input::placeholder {
+  font-family: open_sans_regular;
+  color: #777;
+}
+
+.login_form .center_login_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_form p {
+  color: #bbb;
+  margin: 10px 0 30px 50px;
+  font-family: open_sans_regular;
+}
+
+.login_form p:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.login_form .login_btn,
+.login_form .signup_btn {
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.25em;
+  font-family: open_sans_bold;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.login_form .login_btn {
+  background-color: var(--first_gradient);
+}
+
+.login_form .signup_btn {
+  border: 2px var(--first_gradient) solid;
+}
+
+.login_footer {
+  display: none;
+}
+
+/*SUPPORT MAIN*/
+
+.support_main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+/*SUPPORT ASIDE*/
+.aside_support .account_active {
+  color: var(--first_gradient);
+}
+
+.aside_support {
+  min-height: 100vh;
+  background-color: var(--secondary_color);
+}
+
+.aside_support a {
+  font-size: 1.25rem;
+  font-family: open_sans_regular;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 60px 20px;
+}
+
+/*FORM*/
+.supportform_container {
+  position: absolute;
+  top: calc(85px + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.supportform_container h1 {
+  color: #fff;
+  font-family: open_sans_regular;
+  font-size: 1.5rem;
+}
+
+.supportform_container form {
+  padding: 40px;
+  margin-top: 20px;
+  background-color: var(--secondary_color);
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  width: 700px;
+}
+
+.supportform_container form .support_order_number_container::after {
+  content: "Write down the order number if this concernes an order";
+  display: block;
+  margin-top: 5px;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.supportform_container form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.supportform_container form input::placeholder {
+  color: #777;
+  font-family: open_sans_regular;
+}
+
+.supportform_container form section {
+  margin-bottom: 40px;
+}
+
+.supportform_container form .textfield {
+  width: 450px;
+  outline: none;
+  border: none;
+  border-bottom: 1px var(--first_gradient) solid;
+  background-color: var(--secondary_color);
+  color: #fff;
+  font-size: 1rem;
+  font-family: open_sans_regular;
+}
+
+.supportform_container form .required::after {
+  content: " *";
+  color: var(--first_gradient);
+  font-size: 0.8rem;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.supportform_container form textarea {
+  resize: none;
+  background-color: var(--main_color);
+  border: 1px var(--first_gradient) solid;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: open_sans_regular;
+}
+
+.supportform_container form textarea::placeholder {
+  font-size: 1rem;
+}
+
+.supportform_container form .submit_btn {
+  display: block;
+  width: 150px;
+  padding: 5px 40px;
+  background-color: var(--first_gradient);
+  border: 1px var(--first_gradient) solid;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  font-family: open_sans_bold;
+  text-decoration: none;
+  cursor: pointer;
 }
