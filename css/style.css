@@ -679,10 +679,8 @@ footer a:hover {
 
 /*FORM*/
 .supportform_container {
-  position: absolute;
-  top: calc(85px + 50px);
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .supportform_container h1 {
@@ -698,7 +696,7 @@ footer a:hover {
   border: none;
   border-radius: 30px;
   outline: none;
-  width: 700px;
+  width: 600px;
 }
 
 .supportform_container form .support_order_number_container::after {
@@ -773,4 +771,41 @@ footer a:hover {
   font-family: open_sans_bold;
   text-decoration: none;
   cursor: pointer;
+}
+
+/*GAMEPAGE*/
+
+.gamepage_main {
+  max-width: calc(1200px + 40px);
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.gamepage_main .gameinfo_container {
+  max-width: 450px;
+}
+
+.gamepage_main .gameinfo_container .gamecover {
+  position: relative;
+}
+
+.gamepage_main .gameinfo_container .gamecover img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.gamepage_main .gameinfo_container .gamecover .tags {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px 0 15px 0;
+}
+
+.gamepage_main .gameinfo_container .gamecover a {
+  padding: 3px 15px;
+  background-color: #3a3c57;
+  border-radius: 13px;
+  color: #fff;
+  text-decoration: none;
 }
