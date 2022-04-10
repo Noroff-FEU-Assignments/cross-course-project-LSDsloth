@@ -49,7 +49,23 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: open_sans_regular;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #444;
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: var(--first_gradient);
+}
+
 
 /*NAVIGATION BAR*/
 
@@ -776,17 +792,20 @@ footer a:hover {
 /*GAMEPAGE*/
 
 .gamepage_main {
-  max-width: calc(1200px + 40px);
-  margin: 50px auto;
-  padding: 0 20px;
 }
 
 .gamepage_main .gameinfo_container {
-  max-width: 450px;
+  max-width: calc(1200px + 40px);
+  margin: 50px auto 100px auto;
+  padding: 0 20px;
+  display: grid;
+  position: relative;;
+  grid-template-columns: 1fr 1fr;  
 }
 
 .gamepage_main .gameinfo_container .gamecover {
   position: relative;
+  max-width: 400px;
 }
 
 .gamepage_main .gameinfo_container .gamecover img {
@@ -802,10 +821,176 @@ footer a:hover {
   padding: 10px 0 15px 0;
 }
 
+.gamepage_main .gameinfo_container .gamecover .tags::-webkit-scrollbar {
+  height: 5px;
+}
+
+.gamepage_main .gameinfo_container .gamecover .tags::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #444;
+  border-radius: 15px;
+}
+
+.gamepage_main .gameinfo_container .gamecover .tags::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: var(--first_gradient);
+}
+
 .gamepage_main .gameinfo_container .gamecover a {
   padding: 3px 15px;
   background-color: #3a3c57;
   border-radius: 13px;
   color: #fff;
   text-decoration: none;
+}
+
+.gamepage_main .gameinfo_container .gamecover .tags a {
+  color: #bbb;
+  font-family: open_sans_bold;
+}
+
+.gamepage_main .gameinfo_container .gamecover .tags a:hover {
+  color: #fff;
+}
+
+.gamepage_main .gameinfo_container .gameinfo {
+  max-width: 500px;
+  height: 100%;
+  margin-top: 0;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .top_description h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: open_sans_bold;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .top_description .rating {
+  color: var(--first_gradient);
+  margin: 5px 0;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .top_description .horizontal_align p {
+  color: #fff;
+  margin: 5px;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .top_description a p:hover {
+  text-decoration: underline;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .horizontal_align {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.gamepage_main .gameinfo_container .gameinfo hr {
+  margin-top: 5px;
+  border: #777 1px solid;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .description {
+  margin: 20px 0;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .description h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .description p {
+  color: #ffff;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase {
+  
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase h3 {
+  color: var(--price_color);
+  font-family: open_sans_bold;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase .amount {
+margin-left: 10px;
+
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase .amount button {
+  font-size: 0.875rem;
+  color: #fff;
+  text-align: center;
+  width: 30px;
+  height: 40px;
+  background-color: var(--secondary_color);
+  border: none;
+  outline: none;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase .amount button:nth-child(odd):hover {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase .add_to_basket {
+color: #fff;
+font-size: 1.25rem;
+padding: 5px 20px;
+background-image: linear-gradient(var(--first_gradient), var(--second_gradient));
+border: none;
+border-radius: 7px;
+cursor: pointer;
+}
+
+.gamepage_main .gameinfo_container .gameinfo .purchase .add_to_basket:hover {
+  background-image: linear-gradient(to bottom, #00a3b3, #0d3fb3);
+}
+
+.bgcolor_section2 {
+width: 100%;
+background-color: var(--secondary_color);
+height: fit-content;
+}
+
+.trailer-review_container {
+  max-width: calc(1200px + 40px);
+  margin: 50px auto 100px auto;
+  padding: 0 20px;
+  
+}
+
+.trailer-review_container .topics {
+  display: flex;
+  justify-content: center;
+}
+
+.trailer-review_container .topics a {
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #777;
+  font-family: open_sans_regular;
+}
+
+.trailer-review_container .topics a:hover {
+  background-color: #252531;
+  color: #fff;
+}
+
+.trailer-review_container .topics .active {
+  border-bottom: 2px var(--first_gradient) solid;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.trailer-review_container .video_container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.trailer-review_container video {
+  width: 70%;
 }
