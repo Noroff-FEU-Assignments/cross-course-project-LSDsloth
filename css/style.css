@@ -66,6 +66,10 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--first_gradient);
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /*NAVIGATION BAR*/
 
