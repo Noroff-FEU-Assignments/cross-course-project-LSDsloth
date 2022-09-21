@@ -160,6 +160,7 @@ main {
 
 .bannercontainer .textbox h1::before,
 .bannercontainer .textbox p::before {
+  display: block;
   color: #fff;
   font-family: roboto_slab_bold;
   text-align: center;
