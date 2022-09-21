@@ -158,8 +158,8 @@ main {
   align-items: center;
 }
 
-.bannercontainer .textbox h1,
-.bannercontainer .textbox p {
+.bannercontainer .textbox h1::before,
+.bannercontainer .textbox p::before {
   color: #fff;
   font-family: roboto_slab_bold;
   text-align: center;
@@ -168,10 +168,12 @@ main {
 
 .bannercontainer .textbox h1 {
   font-size: clamp(1rem, 2.5vw, 2.188rem);
+  content: "THE UNIVERSE OF GAMES";
 }
 
 .bannercontainer .textbox p {
   font-size: clamp(0.5rem, 1.15vw, 1rem);
+  content: "BUY - PLAY - SELL";
 }
 
 /*SEARCHBAR*/
