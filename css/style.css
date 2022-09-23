@@ -376,7 +376,7 @@ main {
 .gameinfo .subinfo .price .earlier_price {
   color: darkgrey;
   text-decoration: line-through;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .gamecard .add_to_cart_btn {
@@ -1007,6 +1007,10 @@ footer a:hover {
   nav {
     height: 50px;
   }
+
+  .all_games_section h1 {
+    font-size: 1.25rem;
+  }
   .games_container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1029,5 +1033,9 @@ footer a:hover {
 @media (max-width: 400px) {
   .gameinfo .subinfo .rating {
     font-size: 0.65rem;
+  }
+
+  .gameinfo .subinfo .price .current_price {
+    font-size: 1rem;
   }
 }
