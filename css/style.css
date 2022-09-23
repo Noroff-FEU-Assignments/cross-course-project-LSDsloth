@@ -157,20 +157,23 @@ main {
   align-items: center;
 }
 
-.bannercontainer .textbox h1,
-.bannercontainer .textbox p {
+.bannercontainer .textbox h1::before,
+.bannercontainer .textbox p::before {
+  display: block;
   color: #fff;
   font-family: roboto_slab_bold;
   text-align: center;
   text-shadow: 2px 2px 6px #000;
 }
 
-.bannercontainer .textbox h1 {
+.bannercontainer .textbox h1::before {
   font-size: clamp(1rem, 2.5vw, 2.188rem);
+  content: "THE UNIVERSE OF GAMES";
 }
 
-.bannercontainer .textbox p {
+.bannercontainer .textbox p:before {
   font-size: clamp(0.5rem, 1.15vw, 1rem);
+  content: "BUY - PLAY - SELL";
 }
 
 /*SEARCHBAR*/
@@ -1033,4 +1036,4 @@ footer a:hover {
     max-width: 300px;
     margin: 0 auto;
   }
-} */
+}
