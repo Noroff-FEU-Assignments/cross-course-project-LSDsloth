@@ -1028,12 +1028,8 @@ footer a:hover {
   }
 }
 
-/* @media (max-width: 400px) {
-  .games_container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .gamecard {
-    max-width: 300px;
-    margin: 0 auto;
+@media (max-width: 400px) {
+  .gameinfo .subinfo .rating {
+    font-size: 0.65rem;
   }
 }
