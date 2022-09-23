@@ -1031,6 +1031,10 @@ footer a:hover {
 }
 
 @media (max-width: 400px) {
+  .gameinfo {
+    margin: 10px 5px;
+  }
+
   .gameinfo .subinfo .rating {
     font-size: 0.65rem;
   }
