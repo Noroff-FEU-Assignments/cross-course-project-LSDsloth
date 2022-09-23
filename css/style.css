@@ -70,7 +70,6 @@ a {
   text-decoration: none;
 }
 
-
 /*NAVIGATION BAR*/
 
 header {
@@ -696,8 +695,8 @@ footer a:hover {
   margin: 50px auto 100px auto;
   padding: 0 20px;
   display: grid;
-  position: relative;;
-  grid-template-columns: 1fr 1fr;  
+  position: relative;
+  grid-template-columns: 1fr 1fr;
 }
 
 .gamepage_main .gameinfo_container .gamecover {
@@ -766,7 +765,12 @@ footer a:hover {
   margin: 5px 0;
 }
 
-.gamepage_main .gameinfo_container .gameinfo .top_description .horizontal_align p {
+.gamepage_main
+  .gameinfo_container
+  .gameinfo
+  .top_description
+  .horizontal_align
+  p {
   color: #fff;
   margin: 5px;
 }
@@ -801,7 +805,6 @@ footer a:hover {
 }
 
 .gamepage_main .gameinfo_container .gameinfo .purchase {
-  
 }
 
 .gamepage_main .gameinfo_container .gameinfo .purchase h3 {
@@ -812,8 +815,7 @@ footer a:hover {
 }
 
 .gamepage_main .gameinfo_container .gameinfo .purchase .amount {
-margin-left: 10px;
-
+  margin-left: 10px;
 }
 
 .gamepage_main .gameinfo_container .gameinfo .purchase .amount button {
@@ -827,19 +829,27 @@ margin-left: 10px;
   outline: none;
 }
 
-.gamepage_main .gameinfo_container .gameinfo .purchase .amount button:nth-child(odd):hover {
+.gamepage_main
+  .gameinfo_container
+  .gameinfo
+  .purchase
+  .amount
+  button:nth-child(odd):hover {
   font-size: 1rem;
   cursor: pointer;
 }
 
 .gamepage_main .gameinfo_container .gameinfo .purchase .add_to_basket {
-color: #fff;
-font-size: 1.25rem;
-padding: 5px 20px;
-background-image: linear-gradient(var(--first_gradient), var(--second_gradient));
-border: none;
-border-radius: 7px;
-cursor: pointer;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 5px 20px;
+  background-image: linear-gradient(
+    var(--first_gradient),
+    var(--second_gradient)
+  );
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .gamepage_main .gameinfo_container .gameinfo .purchase .add_to_basket:hover {
@@ -847,16 +857,15 @@ cursor: pointer;
 }
 
 .bgcolor_section2 {
-width: 100%;
-background-color: var(--secondary_color);
-height: fit-content;
+  width: 100%;
+  background-color: var(--secondary_color);
+  height: fit-content;
 }
 
 .trailer-review_container {
   max-width: calc(1200px + 40px);
   margin: 50px auto 100px auto;
   padding: 0 20px;
-  
 }
 
 .trailer-review_container .topics {
@@ -925,7 +934,6 @@ height: fit-content;
   .gamepage_main .gameinfo_container .gameinfo {
     max-width: 90%;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -1017,7 +1025,7 @@ height: fit-content;
   }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .games_container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1025,4 +1033,4 @@ height: fit-content;
     max-width: 300px;
     margin: 0 auto;
   }
-}
+} */
