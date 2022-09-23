@@ -356,6 +356,7 @@ main {
 .gameinfo .subinfo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .gameinfo .subinfo .price {
@@ -364,9 +365,6 @@ main {
 .gameinfo .subinfo .rating {
   font-size: 0.75rem;
   color: var(--first_gradient);
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .gameinfo .subinfo .price .current_price {
