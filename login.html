@@ -47,28 +47,30 @@
             <h3>THE UNI&shy;VERSE OF GAMES</h3>
         </div>
         
-        <form class="login_form" action="index.html" method="post">
+        <form class="login_form" action="index.html" method="get">
             <h2>Login</h2>
             
             <div class="email">
                 <label for="email">E-mail</label>
                 <div class="center_login_input">
                     <i class="fa-solid fa-envelope"></i>
-                    <input id="email" type="text" placeholder="E-mail Address" required>
+                    <input id="email" type="text" placeholder="E-mail Address">
                 </div>
+                <div id="formEmailError">Write an valid email</div>
             </div>
 
             <div class="password">
                 <label for="password">Password</label>
                 <div class="center_login_input">
                     <i class="fa-solid fa-lock"></i>
-                    <input id="password" type="password" placeholder="Password" required>
+                    <input id="password" type="password" placeholder="Password">
                 </div>
+                <div id="formPasswordError">Password need at least 8 characters</div>
             </div>
             <a href="#"><p>Forgot passwrod?</p></a>
 
-            <a class="login_btn" href="support.html">Login</a>
-            <a class="signup_btn" href="#">Sign up</a>
+            <button class="login_btn" href="support.html">Login</button>
+            <button class="signup_btn" href="#">Sign up</button>
         </form>
     </main>
     <!--MAIN ENDS-->
@@ -105,5 +107,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
     </html>

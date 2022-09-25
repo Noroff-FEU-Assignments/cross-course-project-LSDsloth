@@ -36,6 +36,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -471,7 +472,7 @@ footer a:hover {
 .login_form {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: calc(50% + 80px);
   transform: translate(-50%, -50%);
 }
 
@@ -479,7 +480,8 @@ footer a:hover {
   font-size: 2rem;
   color: #fff;
   font-family: open_sans_medium;
-  margin: 0 0 30px 50px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .login_form .email {
@@ -515,6 +517,12 @@ footer a:hover {
   font-family: open_sans_regular;
 }
 
+.login_form #formEmailError,
+.login_form #formPasswordError {
+  color: red;
+  display: none;
+}
+
 .login_form input::placeholder {
   font-family: open_sans_regular;
   color: #777;
@@ -524,6 +532,10 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.login_form #formEmailError {
+  
 }
 
 .login_form p {
@@ -539,8 +551,8 @@ footer a:hover {
 
 .login_form .login_btn,
 .login_form .signup_btn {
+  width: 100%;
   display: block;
-  width: 100px;
   text-align: center;
   margin: 0 auto;
   color: #fff;
@@ -548,8 +560,14 @@ footer a:hover {
   font-family: open_sans_bold;
   text-decoration: none;
   padding: 5px 40px;
+  border: none;
   border-radius: 30px;
   margin-bottom: 20px;
+}
+
+.login_form .login_btn:hover,
+.login_form .signup_btn:hover {
+  cursor: pointer;
 }
 
 .login_form .login_btn {
@@ -557,6 +575,7 @@ footer a:hover {
 }
 
 .login_form .signup_btn {
+  background-color: transparent;
   border: 2px var(--first_gradient) solid;
 }
 
