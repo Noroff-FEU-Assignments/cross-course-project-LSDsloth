@@ -722,6 +722,7 @@ footer a:hover {
 .gamepage_main .gameinfo_container .gamecover {
   position: relative;
   max-width: 400px;
+  display: grid;
 }
 
 .gamepage_main .gameinfo_container .gamecover img {
