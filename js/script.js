@@ -1,48 +1,65 @@
-const form = document.querySelector(".login_form")
-const email = document.querySelector("#email");
-const formEmailError = document.querySelector("#formEmailError");
-const password = document.querySelector("#password");
-const formpasswordError = document.querySelector("#formPasswordError");
+const main = document.querySelector(".login_main");
+const gamesContainer = document.querySelector(".games_container");
+const earlierPrice = document.querySelector(".earlier_price");
 
-function formValidation() {
-  event.preventDefault();
+const games = [
+    {
+        name: "Assassin",
+        id: "001",
+        image: ".//images/Assassin.jpg",
+        outlet : true
+    },
+    
+    {
+        name: "Black",
+        id: "002",
+        image: "../images/Black.jpg",
+        outlet: false
+    },
 
-  if (emailValidation(email.value) === true) {
-    console.log("Email input valid!");
-    formEmailError.style.display = "none";
-  } else {
-    formEmailError.style.display = "block";
-    console.log("Input invalid!");
-  }
+    {
+        name: "Cyberpunk",
+        id: "003",
+        image: "../images/Cyperpunk.jpg",
+        outlet: true
+    },
 
-  if (password.value.trim().length >= 8) {
-    formPasswordError.style.display = "none";
-  } else {
-    formPasswordError.style.display = "block";
-  }
+    {
+        name: "Super Duper",
+        id: "004",
+        image: "../images/Super_Duper.jpg",
+        outlet: true
+    }
+]
 
-  if (emailValidation(email.value) === true &&
-      password.value.trim().length >= 8) {
-        window.location.href = "support.html";
-      }
+/*for ( i = 0; i < games.length; i++) {
+    console.log(games[i].id);
+    console.log(games.length);
+    console.log(games[i].name);
+    console.log(games[i].outlet);
+
+    gamesContainer.innerHTML += `<div class="gamecard">
+    <div class="thumbnail_container">
+        <a href="#"> <img class="assassin_thumbnail" src="${games[i].image}" alt="assassin game"> </a>
+    </div>
+    <div class="gameinfo">
+        <a href="#"><p class="title">${games[i].name}</p></a>
+        <div class="subinfo">
+            <div class="price">
+                <p class="earlier_price">$5.00</p>
+                <p class="current_price">$10.00</p>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </div>
+    </div>
+    <button class="add_to_cart_btn"><i class="fa-solid fa-cart-plus add_to_cart_icon" title="Add to cart"></i></button>
+</div>`;
+ 
 }
-
-// function formValidation() {
-//     event.preventDefault();
-
-//     if (emailValidation(email.value) === true) {
-//         formEmailError.style.display = "none";
-//         console.log("Email valid");
-//       } else {
-//         formEmailError.style.display = "block";
-//         console.log("Email invalid");
-//       }
-// }
-
- function emailValidation(email) {
-     const regEx = /\S+@\S+\.\S+/;
-     const patternMatches = regEx.test(email);
-     return patternMatches;
-   }
-
-   form.addEventListener("submit", formValidation);
+*/

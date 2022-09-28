@@ -606,8 +606,12 @@ footer a:hover {
   color: #fff;
   text-decoration: none;
   display: block;
-  width: fit-content;
-  margin: 60px 20px;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.aside_support a:hover {
+  color: var(--first_gradient);
 }
 
 /*FORM*/
@@ -839,7 +843,8 @@ footer a:hover {
   margin-left: 10px;
 }
 
-.gamepage_main .gameinfo_container .gameinfo .purchase .amount button {
+.gamepage_main .gameinfo_container .gameinfo .purchase .amount button,
+.gamepage_main .gameinfo_container .gameinfo .purchase .amount input {
   font-size: 0.875rem;
   color: #fff;
   text-align: center;
@@ -933,6 +938,266 @@ footer a:hover {
   color: #fff;
   font-size: 1.5rem;
   font-family: open_sans_bold;
+}
+
+/*CART*/
+
+.yourCart .checkoutDestination {
+  font-family: open_sans_bold;
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.yourCart .checkoutDestination a {
+  display: inline-block;
+  color: #A9A9A9;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.yourCart .checkoutDestination .active {
+  color: #fff;
+  
+}
+
+
+.yourCart .checkoutDestination span {
+  color: #bbb;
+  margin: 5px;
+}
+
+.cartOverview, .cartSummary {
+  width: fit-content;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--secondary_color);
+  border-radius: 10px;
+}
+
+.cartOverview .cartHeaders {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas: '. header1 header2 header3 .';
+}
+
+.cartOverview .destination1 {
+  grid-area: header1;
+}
+
+.cartOverview .destination2 {
+  grid-area: header2;
+}
+
+.cartOverview .destination3 {
+  grid-area: header3;
+}
+
+.cartOverview span {
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.cartOverview .cartGameWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+.cartOverview .cartImageContainer {
+  max-height: 200px;
+  margin: 0 auto;
+}
+
+.cartOverview .cartImageContainer img {
+  max-height: 150px;
+}
+
+.cartOverview .cartGameName p{
+  color: #fff;
+  text-align: center;
+}
+
+.cartOverview .cartGameAmount {
+  text-align: center;
+}
+
+.cartOverview .cartGameAmount button,
+.cartOverview .cartGameAmount input{
+  font-size: 0.875rem;
+  color: #fff;
+  text-align: center;
+  width: 30px;
+  height: 40px;
+  background-color: var(--main_color);
+  border: none;
+  outline: none;
+}
+
+.cartOverview .cartGameAmount button:hover {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cartOverview .cartSubtotal .current_price {
+  color: var(--price_color);
+  text-align: center;
+  font-size: 1.15rem;
+  font-family: open_sans_regular;
+}
+
+.cartOverview .cartRemoveGame {
+  color: red;
+  text-align: center;
+}
+
+/*TEST*/
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table th, table tr:not(:last-child){
+  border-bottom: 1px solid gray;
+}
+
+table td img {
+  width: 100px;
+  
+}
+
+table th {
+  color: #fff;
+  font-size: 1.125rem;
+  font-family: open_sans_regular;
+  width: 200px;
+  padding: 10px;
+}
+
+table td {
+  text-align: center;
+  padding: 10px;
+}
+
+table .cartGameName {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+table .earlier_price {
+  color: darkgrey;
+  font-size: .875rem;
+}
+
+table .current_price {
+  color: var(--price_color);
+  font-size: 1.125rem;
+  font-family: open_sans_regular;
+}
+
+table .deleteIcon {
+  color: red;
+}
+
+.cartSummary {
+  color: #fff;
+  width: 30%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.cartSummary h2 {
+  font-size: 1.25rem;
+  font-family: open_sans_bold;
+  margin-bottom: 15px;
+}
+
+.cartSummary .totalCost .costBeforeDiscounts {
+  color: #A9A9A9;
+  margin-bottom: 10px;
+  font-size: .875rem;
+}
+
+.cartSummary .totalCost .costBeforeDiscounts span:last-child {
+  float: right;
+}
+
+.cartSummary .totalCost .costAfterDiscounts span {
+  font-size: 1.125rem;
+}
+
+.cartSummary .totalCost .costAfterDiscounts span:last-child {
+  float: right;
+}
+
+.cartSummary button {
+  display: block;
+  background-color: var(--first_gradient);
+  text-align: center;
+  color: #fff;
+  font-size: 1.125em;
+  font-family: open_sans_medium;
+  margin-top: 10px;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/*CHECKOUT*/
+
+.checkoutForm {
+  max-width: 830px;
+  margin: 20px auto;
+  background-color: var(--secondary_color);
+  padding: 20px;
+  
+}
+
+.checkoutForm .formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.checkoutForm .formGrid div:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.checkoutForm div:nth-child(odd) {
+  margin-right: 50px;
+}
+
+.checkoutForm label {
+  color: #BBB;
+  font-size: 1.125rem;
+  display: block;
+}
+
+.checkoutForm input {
+  width: 100%;
+  margin-top: 5PX;
+  font-size: 1.125rem;
+  color: #fff;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--first_gradient);
+}
+
+.checkoutForm button {
+  display: block;
+  background-color: var(--first_gradient);
+  text-align: center;
+  color: #fff;
+  font-size: 1.125em;
+  font-family: open_sans_medium;
+  margin-top: 30px;
+  padding: 7px 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -1048,6 +1313,16 @@ footer a:hover {
   footer section {
     margin: 25px;
   }
+
+  .checkoutForm .formGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkoutForm .formGrid div {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 400px) {
