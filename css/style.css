@@ -121,6 +121,25 @@ nav ul li a:hover {
   font-size: 23px;
 }
 
+.icons .cart_icon {
+  position: relative;
+}
+
+.icons .cart_icon::after {
+ content: "1";
+ font-size: .75rem;
+ color: #fff;
+ text-align: center;
+ line-height: 18px;
+ background-color: var(--first_gradient);
+ width: 18px;
+ height: 18px;
+ border-radius: 50%;
+ position: absolute;
+ top: -18px;
+ left: 18px;
+}
+
 .user_icon {
   margin-right: 25px;
   color: #1d1d1d;
