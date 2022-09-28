@@ -1200,6 +1200,41 @@ table .deleteIcon {
   cursor: pointer;
 }
 
+/*CHECKOUT SUCCESS*/
+
+.checkoutSuccess {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+
+.checkoutSuccess .checkoutSuccessIcon {
+  position: relative;
+  display: block;
+  background-color: var(--first_gradient);
+  width: 80px;
+  height: 80px;
+  margin: 20px auto 0 ;
+  border-radius: 50%;
+}
+
+.checkoutSuccess .checkoutSuccessIcon i {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkoutSuccess h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: open_sans_bold;
+}
+
 @media (max-width: 1000px) {
   .games_container {
     grid-template-columns: repeat(4, 1fr);
