@@ -126,18 +126,18 @@ nav ul li a:hover {
 }
 
 .icons .cart_icon::after {
- content: "1";
- font-size: .75rem;
- color: #fff;
- text-align: center;
- line-height: 18px;
- background-color: var(--first_gradient);
- width: 18px;
- height: 18px;
- border-radius: 50%;
- position: absolute;
- top: -18px;
- left: 18px;
+  content: "1";
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  background-color: var(--first_gradient);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px;
+  left: 18px;
 }
 
 .user_icon {
@@ -554,7 +554,6 @@ footer a:hover {
 }
 
 .login_form #formEmailError {
-  
 }
 
 .login_form p {
@@ -969,23 +968,22 @@ footer a:hover {
 
 .yourCart .checkoutDestination a {
   display: inline-block;
-  color: #A9A9A9;
+  color: #a9a9a9;
   font-size: 1.25rem;
   position: relative;
 }
 
 .yourCart .checkoutDestination .active {
   color: #fff;
-  
 }
-
 
 .yourCart .checkoutDestination span {
   color: #bbb;
   margin: 5px;
 }
 
-.cartOverview, .cartSummary {
+.cartOverview,
+.cartSummary {
   width: fit-content;
   margin: 50px auto;
   padding: 20px;
@@ -997,7 +995,7 @@ footer a:hover {
   margin: 0 auto;
   width: 100%;
   display: grid;
-  grid-template-areas: '. header1 header2 header3 .';
+  grid-template-areas: ". header1 header2 header3 .";
 }
 
 .cartOverview .destination1 {
@@ -1033,7 +1031,7 @@ footer a:hover {
   max-height: 150px;
 }
 
-.cartOverview .cartGameName p{
+.cartOverview .cartGameName p {
   color: #fff;
   text-align: center;
 }
@@ -1043,7 +1041,7 @@ footer a:hover {
 }
 
 .cartOverview .cartGameAmount button,
-.cartOverview .cartGameAmount input{
+.cartOverview .cartGameAmount input {
   font-size: 0.875rem;
   color: #fff;
   text-align: center;
@@ -1078,13 +1076,13 @@ table {
   border-collapse: collapse;
 }
 
-table th, table tr:not(:last-child){
+table th,
+table tr:not(:last-child) {
   border-bottom: 1px solid gray;
 }
 
 table td img {
   width: 100px;
-  
 }
 
 table th {
@@ -1107,7 +1105,7 @@ table .cartGameName {
 
 table .earlier_price {
   color: darkgrey;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 table .current_price {
@@ -1118,6 +1116,7 @@ table .current_price {
 
 table .deleteIcon {
   color: red;
+  cursor: pointer;
 }
 
 .cartSummary {
@@ -1134,9 +1133,9 @@ table .deleteIcon {
 }
 
 .cartSummary .totalCost .costBeforeDiscounts {
-  color: #A9A9A9;
+  color: #a9a9a9;
   margin-bottom: 10px;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .cartSummary .totalCost .costBeforeDiscounts span:last-child {
@@ -1172,7 +1171,6 @@ table .deleteIcon {
   margin: 20px auto;
   background-color: var(--secondary_color);
   padding: 20px;
-  
 }
 
 .checkoutForm .formGrid {
@@ -1189,14 +1187,14 @@ table .deleteIcon {
 }
 
 .checkoutForm label {
-  color: #BBB;
+  color: #bbb;
   font-size: 1.125rem;
   display: block;
 }
 
 .checkoutForm input {
   width: 100%;
-  margin-top: 5PX;
+  margin-top: 5px;
   font-size: 1.125rem;
   color: #fff;
   outline: none;
@@ -1235,7 +1233,7 @@ table .deleteIcon {
   background-color: var(--first_gradient);
   width: 80px;
   height: 80px;
-  margin: 20px auto 0 ;
+  margin: 20px auto 0;
   border-radius: 50%;
 }
 
@@ -1376,7 +1374,6 @@ table .deleteIcon {
   .checkoutForm .formGrid div {
     width: 100%;
   }
-
 }
 
 @media (max-width: 400px) {
