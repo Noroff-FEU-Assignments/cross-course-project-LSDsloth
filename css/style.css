@@ -141,8 +141,11 @@ nav ul li a:hover {
 }
 
 .user_icon {
-  margin-right: 25px;
   color: #1d1d1d;
+}
+
+a:has(> .user_icon) {
+  margin-right: 25px;
 }
 
 .user_icon:hover {
@@ -537,7 +540,12 @@ footer a:hover {
 }
 
 .login_form #formEmailError,
-.login_form #formPasswordError {
+.login_form #formPasswordError,
+.checkoutForm #formFirstNameError,
+.checkoutForm #formLastNameError,
+.checkoutForm #formNumberError,
+.checkoutForm #formEmailError,
+.checkoutForm #formCountryError {
   color: red;
   display: none;
 }
@@ -1176,14 +1184,10 @@ table .deleteIcon {
 .checkoutForm .formGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   width: 100%;
 }
 .checkoutForm .formGrid div:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.checkoutForm div:nth-child(odd) {
-  margin-right: 50px;
 }
 
 .checkoutForm label {

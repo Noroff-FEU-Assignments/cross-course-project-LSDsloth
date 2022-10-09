@@ -10,16 +10,21 @@
       crossorigin="anonymous"
     ></script>
     <!-- Hotjar Tracking Code for https://blissful-leavitt-37e7db.netlify.app/index.html -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3184418,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3184418, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
     <title>Gamehub|Home</title>
   </head>
   <body>
@@ -63,54 +68,41 @@
       </div>
 
       <form method="post" action="checkoutSuccess.html" class="checkoutForm">
-        <div class="formGrid">
-          <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" />
+        <div class="checkoutFormInputs">
+          <div class="formGrid">
+            <div>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" />
+              <div id="formFirstNameError">Please enter your first name</div>
+            </div>
+
+            <div>
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="lname" />
+              <div id="formLastNameError">Please enter your last name</div>
+            </div>
+
+            <div>
+              <label for="number">Telephone</label>
+              <input type="tel" id="number" name="number" />
+              <div id="formNumberError">Please enter your phone number</div>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <div id="formEmailError">Please write a valid email</div>
+            </div>
+
+            <div>
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" />
+              <div id="formCountryError">This field is required</div>
+            </div>
           </div>
 
-          <div>
-            <label for="lname">Last name</label>
-            <input type="text" id="lname" name="lname" />
-          </div>
-
-          <div>
-            <label for="number">Telephone</label>
-            <input type="tel" id="number" name="number" />
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div>
-            <label for="country">Country</label>
-            <input type="text" id="country" name="country" />
-          </div>
-
-          <div>
-            <label for="state">State</label>
-            <input type="text" id="state" name="state" />
-          </div>
-
-          <div>
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" />
-          </div>
-
-          <div>
-            <label for="street">Street</label>
-            <input type="text" id="street" name="street" />
-          </div>
-
-          <div>
-            <label for="zip">Zip/postal code</label>
-            <input type="text" id="zip" name="zip" />
-          </div>
+          <button type="submit">Confirm address</button>
         </div>
-
-        <button type="submit">Confirm address</button>
       </form>
     </main>
 
@@ -141,5 +133,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/checkoutFormError.js"></script>
   </body>
 </html>
