@@ -1,5 +1,4 @@
-const productsUrl =
-  "http://localhost/flower-power/wordpress/wp-json/wc/store/products";
+const productsUrl = "https://libeck.tech/gamehub/wp-json/wc/store/products";
 const gamesContainer = document.querySelector(".games_container");
 const allGamesContainer = document.querySelector(".allGames .games_container");
 const upcomingGamesContainer = document.querySelector(
@@ -9,8 +8,8 @@ const usedGamesContainer = document.querySelector(
   ".usedGames .games_container"
 );
 
-async function getProducts(url) {
-  const response = await fetch(url);
+async function getProducts(productsUrl) {
+  const response = await fetch(productsUrl);
   const games = await response.json();
   console.log(games);
 

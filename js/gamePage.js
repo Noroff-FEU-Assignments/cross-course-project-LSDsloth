@@ -9,8 +9,7 @@ const name = params.get("name");
 
 console.log(name);
 
-const productsUrl =
-  "http://localhost/flower-power/wordpress/wp-json/wc/store/products";
+const productsUrl = "https://libeck.tech/gamehub/wp-json/wc/store/products";
 
 const gameDescription = document.querySelector(".description");
 const gameCoverImg = document.querySelector(".gameCoverImg");
