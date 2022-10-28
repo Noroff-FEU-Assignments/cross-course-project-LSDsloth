@@ -755,7 +755,7 @@ footer a:hover {
   display: grid;
 }
 
-.gamepage_main .gameinfo_container .gamecover img {
+.gamepage_main .gameinfo_container .gamecover .gameCoverImg img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   margin: 0 auto;
@@ -841,17 +841,17 @@ footer a:hover {
   border: #777 1px solid;
 }
 
-.gamepage_main .gameinfo_container .gameinfo .description {
+.gamepage_main .gameinfo_container .gameinfo .descriptionContainer {
   margin: 20px 0;
 }
 
-.gamepage_main .gameinfo_container .gameinfo .description h2 {
+.gamepage_main .gameinfo_container .gameinfo .descriptionContainer h2 {
   color: #fff;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
-.gamepage_main .gameinfo_container .gameinfo .description p {
+.gamepage_main .gameinfo_container .gameinfo .descriptionContainer p {
   color: #ffff;
 }
 
