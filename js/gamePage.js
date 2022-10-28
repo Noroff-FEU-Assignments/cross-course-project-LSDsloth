@@ -17,6 +17,7 @@ const gameCoverImg = document.querySelector(".gameCoverImg");
 const gameInfoContainer = document.querySelector(".gameinfo_container");
 const gameTags = document.querySelector(".tags");
 const gameInfoName = document.querySelector(".gameInfoName");
+const gamePagePrice = document.querySelector(".gamePagePrice");
 
 async function wizard() {
   title.innerHTML += name;
@@ -42,6 +43,9 @@ async function wizard() {
         <a href="#">${results[i].tags[n].name}</a>
         `;
         }
+
+        gamePagePrice.innerHTML =
+          results[i].prices.sale_price + results[i].prices.currency_symbol;
 
         gameInfoName.innerHTML = results[i].name;
       }
