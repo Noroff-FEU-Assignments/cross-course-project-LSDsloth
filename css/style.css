@@ -860,7 +860,7 @@ footer a:hover {
 
 .gamepage_main .gameinfo_container .gameinfo .purchase h3 {
   color: var(--price_color);
-  font-family: open_sans_bold;
+  font-family: open_sans_regular;
   font-size: 1.5rem;
   margin-right: 20px;
 }

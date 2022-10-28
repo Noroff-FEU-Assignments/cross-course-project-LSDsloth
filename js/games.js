@@ -9,18 +9,10 @@ const usedGamesContainer = document.querySelector(
   ".usedGames .games_container"
 );
 
-const loadingIndicator = document.querySelector(".loadingIndicator");
-
 async function getProducts(url) {
   const response = await fetch(url);
   const games = await response.json();
   console.log(games);
-
-  if (!gamesContainer.innerHTML) {
-    loadingIndicator.style.display = "block";
-  } else {
-    loadingIndicator.style.display = "none";
-  }
 
   for (let i = 0; i < 5; i++) {
     console.log("ForEach loop: " + games[i].name);
