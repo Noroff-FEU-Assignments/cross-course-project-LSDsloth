@@ -17,7 +17,3 @@ This is an e-commerce website that sells games. You can also sell games you have
 ## Contact
 
 If you want to contact me you can message me on <a href="https://twitter.com/StianLibeck">Twitter</a>
-
-[My Twitter page](https://twitter.com/StianLibeck)
-
-
