@@ -8,8 +8,6 @@ A simple overview of the use/purpose of the project.
 
 This is an e-commerce website that sells games. You can also sell games you have finished.
 
-You can add some bullet points if you'd like to:
-
 ## Built With
 
 - HTML
