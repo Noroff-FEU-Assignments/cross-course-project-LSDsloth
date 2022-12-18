@@ -16,7 +16,7 @@ This is an e-commerce website that sells games. You can also sell games you have
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+If you want to contact me you can message me on <a href="https://twitter.com/StianLibeck">Twitter</a>
 
 [My Twitter page](https://twitter.com/StianLibeck)
 
